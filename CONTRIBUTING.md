@@ -43,8 +43,7 @@ CI runs the same checks on every pull request.
 
 ## Releases (maintainers)
 
-1. Update the version in `package.json`, `src-tauri/Cargo.toml` and `src-tauri/tauri.conf.json`,
-   and add a section to `CHANGELOG.md`.
+1. Update the version in `package.json`, `src-tauri/Cargo.toml` and `src-tauri/tauri.conf.json`.
 2. Tag it: `git tag v1.2.3 && git push --tags`.
 3. The *Release* workflow builds the installer and opens a draft GitHub release. Review it and publish.
 
