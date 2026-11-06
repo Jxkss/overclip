@@ -10,7 +10,7 @@ A free, open-source in-game overlay for Windows. Press a key in any game to brow
 share and tidy up everything your recorder saves — without alt-tabbing.
 
 [Download](https://github.com/Jxkss/overclip/releases/latest) ·
-[Website](https://jxkss.github.io/overclip/) ·
+[Website](https://overclip.jxks.dev/) ·
 [Report a bug](https://github.com/Jxkss/overclip/issues/new/choose)
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-76b900)
@@ -135,6 +135,7 @@ the interface on any OS.
 
 - **Website:** the `Website` workflow publishes `website/` to GitHub Pages on every push to `main`.
   Turn it on once under Settings → Pages → Build and deployment → Source: **GitHub Actions**.
+  The site is served at <https://overclip.jxks.dev> (custom domain set under Settings → Pages).
 - **Releases:** push a tag like `v0.1.0` (`git tag v0.1.0 && git push origin v0.1.0`). The `Release`
   workflow builds the installer and opens a draft release with it attached; review and publish it.
 

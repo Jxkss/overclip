@@ -35,6 +35,6 @@ jobs:
           releaseName: Overclip ${{ github.ref_name }}
           releaseBody: |
             **Download `Overclip_*_x64-setup.exe` below**, run it, and follow the setup wizard.
-            No admin rights needed. See the [website](https://jxkss.github.io/overclip/) for everything Overclip does.
+            No admin rights needed. See the [website](https://overclip.jxks.dev/) for everything Overclip does.
           releaseDraft: true
           prerelease: false
