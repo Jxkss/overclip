@@ -129,13 +129,12 @@ the interface on any OS.
 | `src/dev/demo.tsx` | Fake backend for browser development and screenshots |
 | `src-tauri/src/` | Rust backend: folder scanning, thumbnails, hotkeys, audio, settings, recorder control (`amd.rs`, `gamebar.rs`, `obs.rs`, `recorder.rs`) |
 | `src-tauri/installer/` | Installer artwork and NSIS hooks |
-| `website/` | The project website (static, deployed to GitHub Pages) |
+| `website/` | The project website (static, hosted on Netlify) |
 
 ## Publishing
 
-- **Website:** the `Website` workflow publishes `website/` to GitHub Pages on every push to `main`.
-  Turn it on once under Settings → Pages → Build and deployment → Source: **GitHub Actions**.
-  The site is served at <https://overclip.jxks.dev> (custom domain set under Settings → Pages).
+- **Website:** hosted on Netlify at <https://overclip.jxks.dev>. `netlify.toml` publishes `website/`
+  as-is (no build step), and Netlify redeploys it on every push to `main`.
 - **Releases:** push a tag like `v0.1.0` (`git tag v0.1.0 && git push origin v0.1.0`). The `Release`
   workflow builds the installer and opens a draft release with it attached; review and publish it.
 
