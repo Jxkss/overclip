@@ -1048,34 +1048,6 @@ html.js .steps[data-reveal]:not(.is-in) li::before {
   transition-delay: 0.48s;
 }
 
-.btn-primary {
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-primary::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 45%;
-  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-  transform: translateX(-130%) skewX(-20deg);
-  animation: sheen 5s ease-in-out 2s infinite;
-  pointer-events: none;
-}
-
-@keyframes sheen {
-  0%,
-  65% {
-    transform: translateX(-130%) skewX(-20deg);
-  }
-  100% {
-    transform: translateX(330%) skewX(-20deg);
-  }
-}
-
 .recbar-stage {
   position: relative;
   padding-bottom: 54px;
@@ -1243,36 +1215,6 @@ html.js .steps[data-reveal]:not(.is-in) li::before {
   to {
     visibility: hidden;
   }
-}
-
-.cta-logo {
-  position: relative;
-  width: 64px;
-  height: 64px;
-  margin: 40px auto 58px;
-}
-
-.cta-logo img {
-  position: relative;
-  margin: 0;
-}
-
-.cta-ring {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 150px;
-  height: 150px;
-  margin: -75px;
-  border-radius: 50%;
-  padding: 2px;
-  background: conic-gradient(from var(--angle), transparent 0 40%, var(--accent) 70%, #fff 76%, transparent 82%);
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: beam-spin 4s linear infinite;
 }
 
 .other-recorders .section-lead {
