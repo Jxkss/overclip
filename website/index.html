@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Overclip: your game clips, one shortcut away</title>
+    <meta
+      name="description"
+      content="Overclip is a free, open-source in-game overlay for Windows. Press a shortcut in any game to browse, preview, share and tidy up your clips and screenshots. It can also save replays and change recording settings for AMD Software, Xbox Game Bar and OBS, and press NVIDIA App's and Medal's shortcuts for you."
+    />
+    <meta property="og:title" content="Overclip: your game clips, one shortcut away" />
+    <meta
+      property="og:description"
+      content="Free, open-source in-game overlay for your clips and screenshots. Works with Game Bar, ShadowPlay, ReLive, OBS and more, and can drive the recorder you already use."
+    />
+    <meta property="og:image" content="assets/og-image.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="style.css?v=13" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="nav">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#top">
+          <img src="assets/logo.png" alt="" width="28" height="28" />
+          <span>Overclip</span>
+        </a>
+        <nav class="nav-links" aria-label="Main">
+          <a href="#features">Features</a>
+          <a href="#recording">Recording</a>
+          <a href="#customize">Customize</a>
+          <a href="#faq">FAQ</a>
+          <a href="https://github.com/Jxkss/overclip" class="nav-gh">GitHub</a>
+        </nav>
+        <a class="btn btn-primary btn-small" data-download href="https://github.com/Jxkss/overclip/releases/latest">Download</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="wrap hero-inner">
+          <p class="eyebrow intro" style="--d: 0">Free &amp; open source · Windows 10 &amp; 11</p>
+          <h1>
+            <span class="line intro" style="--d: 1">Your game clips.</span><br />
+            <span class="line intro shimmer" style="--d: 2">One shortcut away.</span>
+          </h1>
+          <p class="lead intro" style="--d: 3">
+            Overclip is an in-game overlay that puts every clip and screenshot you've recorded one keypress away:
+            browse, preview, share and clean up without ever alt-tabbing.
+            It can even save replays with the recorder you already use.
+          </p>
+          <div class="cta intro" style="--d: 4">
+            <a class="btn btn-primary" data-download href="https://github.com/Jxkss/overclip/releases/latest">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14" /></svg>
+              <span data-download-label>Download for Windows</span>
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/Jxkss/overclip">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" /></svg>
+              View source
+            </a>
+          </div>
+          <p class="fineprint intro" style="--d: 5" data-download-meta>No account · No ads · No tracking</p>
+        </div>
+        <div class="wrap">
+          <figure class="hero-shot intro" style="--d: 5">
+            <div class="shot-frame">
+              <span class="beam" aria-hidden="true"></span>
+              <img src="assets/screenshot-gallery.png" alt="The Overclip gallery open over a game" width="1600" height="900" />
+            </div>
+            <figcaption class="kbd-seq"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> in any game</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="works-with">
+        <div class="wrap">
+          <p>Works with the recorder you already use</p>
+          <ul>
+            <li>Xbox Game Bar</li>
+            <li>NVIDIA App (ShadowPlay)</li>
+            <li>AMD Software (ReLive)</li>
+            <li>OBS Studio</li>
+            <li>Medal</li>
+            <li>Outplayed</li>
+            <li>ShareX</li>
+            <li>Windows screenshots</li>
+          </ul>
+          <p class="works-note">
+            Overclip can also drive AMD Software, Xbox Game Bar, OBS Studio, NVIDIA App and Medal.
+            <a href="#recording">See how</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="wrap">
+          <h2>Everything you need, nothing you don't</h2>
+          <p class="section-lead">Made for people who hit "save replay" a lot and then never find the clip again.</p>
+          <div class="features">
+            <article class="feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3.5L5.5 13H12l-1 7.5L18.5 11H12z" /></svg>
+              <h3>Opens instantly</h3>
+              <p>A global shortcut brings up your library on top of any game. Scanning happens in the background, so it's there the moment you press the key.</p>
+            </article>
+            <article class="feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 9h10v10H9zM5 15V5h10" /></svg>
+              <h3>Share in one keystroke</h3>
+              <p><kbd>Ctrl</kbd>+<kbd>C</kbd> copies the actual video file. <kbd>Ctrl</kbd>+<kbd>V</kbd> it into Discord, a browser or a folder. That's it.</p>
+            </article>
+            <article class="feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4.5h6v6h-6zM13.5 4.5h6v6h-6zM4.5 13.5h6v6h-6zM13.5 13.5h6v6h-6z" /></svg>
+              <h3>Organised for you</h3>
+              <p>Clips are grouped by game and by day, with cover art from each game's latest clip. Search, favourites and sorting by length or size.</p>
+            </article>
+            <article class="feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" /></svg>
+              <h3>Preview without leaving</h3>
+              <p>Hover a clip to see it move. Open it full-size, step through with the arrow keys, rename or favourite as you go.</p>
+            </article>
+            <article class="feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h3.7l2 2h7.3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z" /></svg>
+              <h3>Every folder, every drive</h3>
+              <p>Combine your recorder folders and external drives in one library. Drives stay safe to eject while Overclip runs.</p>
+            </article>
+            <article class="feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l1.8 5.2L19 10.5l-5.2 1.8L12 17.5l-1.8-5.2L5 10.5l5.2-1.8z" /></svg>
+              <h3>Light on your PC</h3>
+              <p>Thumbnails come from Windows' own cache, heavy work runs at background priority, and nothing happens while the overlay is closed.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="wrap split-inner">
+          <div class="split-text">
+            <p class="eyebrow">Side panel</p>
+            <h2>A quick look, without the full takeover</h2>
+            <p>
+              Press <kbd>Ctrl</kbd>+<kbd>P</kbd> for a slim panel on the edge of your screen, with your latest clips, screenshots
+              and a per-app volume mixer. Press the other shortcut to expand it into the full gallery.
+            </p>
+            <ul class="ticks">
+              <li>Left or right, as wide as you like</li>
+              <li>Search, filter by game, favourites</li>
+              <li>Volume for every app that's playing sound</li>
+            </ul>
+          </div>
+          <img class="split-shot" src="assets/screenshot-panel.png" alt="The Overclip side panel" loading="lazy" width="1600" height="900" />
+        </div>
+      </section>
+
+      <section id="recording" class="section recording">
+        <div class="wrap">
+          <p class="eyebrow eyebrow-center">For AMD Radeon users</p>
+          <h2>Record with Adrenalin.<br /><span class="accent-text">Run it from Overclip.</span></h2>
+          <p class="section-lead">
+            Already using AMD Software's Instant Replay? Overclip becomes your clipping tool. It drives AMD's own recorder,
+            and AMD's recording settings move into Overclip, so you never have to dig through Adrenalin again. No second
+            recorder, no extra load on your PC.
+          </p>
+
+          <div class="recbar-demo">
+            <div class="recbar-stage">
+            <div class="recbar" aria-hidden="true">
+              <span class="recbar-status"><i></i>Replay 1 min</span>
+              <span class="recbar-btn recbar-save" data-act="save">
+                <svg width="20" height="20" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4.5V9H9M12 8.5v4l2.8 1.7" /></svg>
+                Save replay
+              </span>
+              <span class="recbar-btn recbar-rec" data-act="record">
+                <svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 4a8 8 0 1 1 0 16 8 8 0 0 1 0-16zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" /></svg>
+                <b>Record</b>
+              </span>
+              <span class="recbar-btn recbar-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24"><path d="M4 8h3.5L9 5.5h6L16.5 8H20v11H4zM12 10.5a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7z" /></svg>
+              </span>
+              <svg class="fake-cursor" viewBox="0 0 24 24"><path d="M5 3l14 8-6.2 1.6L10 19z" /></svg>
+            </div>
+            <div class="recbar-toast" aria-hidden="true"><i></i><span></span></div>
+            </div>
+            <p>
+              Right in the overlay header: see whether Instant Replay is running, save the last minute, start a recording or
+              grab a screenshot. Overclip hides itself first, so it's never in the shot. AMD's own hotkeys, like
+              <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>, keep working too.
+            </p>
+          </div>
+
+          <div class="rec-grid">
+            <img
+              src="assets/screenshot-recording.png"
+              alt="Overclip's Recording settings: Instant Replay, replay length, save folder and video quality"
+              loading="lazy"
+              width="1600"
+              height="1000"
+            />
+            <div class="rec-cards">
+              <article>
+                <h3>Save a replay, see it land</h3>
+                <p>Hit Save replay and Overclip tells you when the clip arrives, already sorted under the game it came from.</p>
+              </article>
+              <article>
+                <h3>AMD's settings, in plain words</h3>
+                <p>Replay length, quality, codec, sound and save folder, with notes on what each one does. Changes apply on their own.</p>
+              </article>
+              <article>
+                <h3>Your gallery follows your recorder</h3>
+                <p>Point AMD at a new folder or drive and Overclip offers to add it to your library, so new clips always show up.</p>
+              </article>
+            </div>
+          </div>
+
+          <h3 class="sub-h">Everything you'd normally dig through Adrenalin for</h3>
+          <dl class="settings-map">
+            <div><dt>Instant Replay</dt><dd>On or off, and how far back a saved replay goes: 15 seconds to 20 minutes.</dd></div>
+            <div><dt>Save folder</dt><dd>Where AMD saves clips and screenshots, added to your gallery in one click.</dd></div>
+            <div><dt>Resolution</dt><dd>Native (the game's own), 720p, 1080p, 1440p or 4K.</dd></div>
+            <div><dt>Frame rate</dt><dd>30 or 60 fps.</dd></div>
+            <div><dt>Quality</dt><dd>5 to 100 Mbps, with an estimate of how big a minute of video gets.</dd></div>
+            <div><dt>Codec</dt><dd>H.264, HEVC or AV1; only the ones your graphics card can actually record are offered.</dd></div>
+            <div><dt>Sound</dt><dd>Game and system sound, your microphone, and its volume.</dd></div>
+            <div><dt>Audio channels</dt><dd>Stereo or Automatic. Stereo keeps clips playable everywhere (see below).</dd></div>
+            <div><dt>Desktop recording</dt><dd>Allow recording outside of games too.</dd></div>
+            <div><dt>Hotkeys</dt><dd>AMD's save, record and screenshot shortcuts, shown so you don't forget them.</dd></div>
+          </dl>
+
+          <div class="callout">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4zM15.5 9.2a4 4 0 0 1 0 5.6M18 6.7a7.5 7.5 0 0 1 0 10.6" /></svg>
+            <div>
+              <h3>Clips with no sound in Windows' Photos or Media Player?</h3>
+              <p>
+                With a surround headset or virtual surround (SteelSeries Sonar, Razer THX, and so on), AMD's "Automatic" audio
+                setting records 7.1 sound. Windows' own player and trimmer can't decode that, so clips play silent and refuse
+                to save after a trim. Set <strong>Audio channels</strong> to <strong>Stereo</strong> in Overclip and every new
+                clip plays everywhere. You'll still hear surround while you play.
+              </p>
+            </div>
+          </div>
+
+          <div class="rec-how">
+            <h3 class="sub-h">How it works</h3>
+            <ol class="steps">
+              <li>
+                Overclip finds AMD Software on your PC and reads its recording settings: the same ones you'd set in Adrenalin.
+                Change something in Adrenalin instead and Overclip picks it up the next time you open it.
+              </li>
+              <li>
+                When you change a setting, Overclip saves it where AMD keeps it and restarts Instant Replay so the recorder
+                uses it, just like changing it in AMD Software. The seconds buffered before the change are dropped.
+              </li>
+              <li>
+                Save replay, Record and Screenshot go through AMD's own command-line tool. The files are AMD's own recordings,
+                saved where they always were.
+              </li>
+            </ol>
+            <p class="rec-req">
+              Needs AMD Radeon graphics with AMD Software: Adrenalin Edition installed and running (it starts with Windows by
+              default).
+            </p>
+          </div>
+
+          <div class="other-recorders">
+            <h3 class="sub-h">Not on AMD? Pick your recorder</h3>
+            <p class="section-lead">
+              Settings → Recording → <strong>Your recorder</strong>. Overclip uses whatever each app allows: full settings where
+              it can, its own shortcuts where it can't.
+            </p>
+            <div class="recorder-shots">
+              <figure>
+                <div class="shot-crop">
+<img
+                  src="assets/screenshot-gamebar.png"
+                  alt="Xbox Game Bar's capture settings inside Overclip: background recording, replay length, longest recording, frame rate"
+                  loading="lazy"
+                  width="1600"
+                  height="1000"
+                />
+                </div>
+                <figcaption>Xbox Game Bar's settings, inside Overclip</figcaption>
+              </figure>
+              <figure>
+                <div class="shot-crop">
+<img
+                  src="assets/screenshot-obs.png"
+                  alt="OBS Studio settings inside Overclip: replay buffer, replay length, frame rate, recording quality"
+                  loading="lazy"
+                  width="1600"
+                  height="1000"
+                />
+                </div>
+                <figcaption>OBS Studio, connected through its own remote control</figcaption>
+              </figure>
+            </div>
+            <dl class="settings-map">
+              <div>
+                <dt>Xbox Game Bar</dt>
+                <dd>
+                  Settings and buttons. Background recording, how far back it saves, frame rate, quality, sound and the
+                  captures folder, through Windows' own capture-settings API.
+                </dd>
+              </div>
+              <div>
+                <dt>OBS Studio</dt>
+                <dd>
+                  Settings and buttons. Replay buffer on/off and length, frame rate, quality and folder, through OBS's built-in
+                  remote control. Overclip reads the password from OBS's own settings.
+                </dd>
+              </div>
+              <div>
+                <dt>NVIDIA App</dt>
+                <dd>
+                  Buttons only. Overclip presses NVIDIA's shortcuts for you (Alt+F10, Alt+F9, Alt+F1 by default). Its settings
+                  stay in NVIDIA App.
+                </dd>
+              </div>
+              <div>
+                <dt>Medal</dt>
+                <dd>Save clip only, by pressing Medal's clip key (F8 by default). Its settings stay in Medal.</dd>
+              </div>
+              <div>
+                <dt>Outplayed, Steam</dt>
+                <dd>Their clips show up in the gallery, but they don't let other apps control them.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="customize" class="section">
+        <div class="wrap">
+          <h2>Make it yours</h2>
+          <p class="section-lead">Every setting applies instantly. Try a colour:</p>
+          <div class="swatches" role="radiogroup" aria-label="Preview accent colour">
+            <button class="swatch is-on" style="--c: #76b900" data-accent="#76b900" aria-label="Green"></button>
+            <button class="swatch" style="--c: #3b82f6" data-accent="#3b82f6" aria-label="Blue"></button>
+            <button class="swatch" style="--c: #06b6d4" data-accent="#06b6d4" aria-label="Cyan"></button>
+            <button class="swatch" style="--c: #8b5cf6" data-accent="#8b5cf6" aria-label="Purple"></button>
+            <button class="swatch" style="--c: #ec4899" data-accent="#ec4899" aria-label="Pink"></button>
+            <button class="swatch" style="--c: #ef4444" data-accent="#ef4444" aria-label="Red"></button>
+            <button class="swatch" style="--c: #f97316" data-accent="#f97316" aria-label="Orange"></button>
+            <button class="swatch" style="--c: #eab308" data-accent="#eab308" aria-label="Gold"></button>
+          </div>
+          <div class="custom-grid">
+            <img src="assets/screenshot-settings.png" alt="Overclip settings: appearance" loading="lazy" width="1600" height="900" />
+            <ul class="custom-list">
+              <li><strong>Appearance</strong> Accent colour, dark or OLED-black theme, interface size, background dimming, animations.</li>
+              <li><strong>Layout</strong> Gallery size up to full screen, side panel position and width, thumbnail size, game covers, day grouping.</li>
+              <li><strong>Behavior</strong> Hover previews, autoplay, "NEW" badges, delete confirmation, click-outside-to-close, what the tray icon opens.</li>
+              <li><strong>Shortcuts</strong> Record any combo for the gallery and the side panel.</li>
+              <li><strong>Recording</strong> Your recorder's replay, quality, sound and save folder: AMD Software, Xbox Game Bar or OBS, plus shortcut buttons for NVIDIA App and Medal.</li>
+              <li><strong>Folders</strong> Any number of clip folders and drives, auto-detected suggestions.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split split-reverse">
+        <div class="wrap split-inner">
+          <div class="split-text">
+            <p class="eyebrow">Set up in a minute</p>
+            <h2>The installer sets everything up with you</h2>
+            <ol class="steps">
+              <li>Run the installer. No admin rights needed.</li>
+              <li>Overclip finds your recorder's folders and shows how many clips are in each.</li>
+              <li>Pick the recorder you already use; on a Radeon PC, choose how far back Instant Replay saves.</li>
+              <li>Pick your shortcuts, colours and behaviour, with a live preview.</li>
+              <li>Press your shortcut in any game. Done.</li>
+            </ol>
+          </div>
+          <img class="split-shot" src="assets/screenshot-setup.png" alt="The Overclip setup wizard" loading="lazy" width="1000" height="680" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap narrow">
+          <h2>Keyboard first</h2>
+          <table class="keys-table">
+            <tbody>
+              <tr><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd></td><td>Full gallery (from any game)</td></tr>
+              <tr><td><kbd>Ctrl</kbd>+<kbd>P</kbd></td><td>Side panel (from any game)</td></tr>
+              <tr><td><kbd>/</kbd> or just type</td><td>Search</td></tr>
+              <tr><td><kbd>Enter</kbd> · <kbd>←</kbd> <kbd>→</kbd></td><td>Preview and step through</td></tr>
+              <tr><td><kbd>Ctrl</kbd>+<kbd>C</kbd></td><td>Copy the file, ready to paste in Discord</td></tr>
+              <tr>
+                <td>Your recorder's own key</td>
+                <td>
+                  Save a replay, even with Overclip closed. By default: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd> AMD ·
+                  <kbd>Win</kbd>+<kbd>Alt</kbd>+<kbd>G</kbd> Game Bar · <kbd>Alt</kbd>+<kbd>F10</kbd> NVIDIA ·
+                  <kbd>F8</kbd> Medal
+                </td>
+              </tr>
+              <tr><td><kbd>F</kbd> · <kbd>F2</kbd> · <kbd>Del</kbd></td><td>Favourite · rename · Recycle Bin</td></tr>
+              <tr><td><kbd>?</kbd></td><td>Every other shortcut</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="wrap narrow">
+          <h2>FAQ</h2>
+          <details>
+            <summary>Does Overclip record clips?</summary>
+            <p>
+              Not by itself: it shows whatever your recorder already saves (Game Bar, ShadowPlay, ReLive, OBS, Medal…). It can
+              also drive the recorder you use: save replays, start recordings and, for AMD Software, Xbox Game Bar and OBS,
+              change their recording settings from the overlay. See <a href="#recording">Recording</a>.
+            </p>
+          </details>
+          <details>
+            <summary>Do I still need to open AMD Software (Adrenalin)?</summary>
+            <p>
+              Rarely. AMD Software has to be installed and running, because it does the actual recording, but day to day you can
+              stay in Overclip. You only need Adrenalin to change AMD's hotkeys or for things Overclip doesn't cover, like
+              streaming.
+            </p>
+          </details>
+          <details>
+            <summary>Will changing settings in Overclip mess up my Adrenalin settings?</summary>
+            <p>
+              They're the same settings, not a copy: Overclip changes them where AMD Software keeps them. Like in AMD Software,
+              changing one restarts Instant Replay, so the moments buffered just before the change are dropped.
+            </p>
+          </details>
+          <details>
+            <summary>My clips have no sound in Windows' Photos or Media Player.</summary>
+            <p>
+              Your recorder probably saved 7.1 surround sound, which happens with surround headsets or apps like SteelSeries
+              Sonar. Windows' own apps can't play it. With AMD Software, set Settings → Recording → Audio channels to
+              <strong>Stereo</strong> in Overclip; new clips will play everywhere.
+            </p>
+          </details>
+          <details>
+            <summary>Can it control NVIDIA ShadowPlay, OBS or Game Bar too?</summary>
+            <p>
+              Yes, as far as each app allows. Xbox Game Bar and OBS Studio: settings and buttons. NVIDIA App: the buttons press
+              its shortcuts, but its settings stay in NVIDIA App, which doesn't let other apps change them. Medal: save clip only.
+              Outplayed and Steam can't be controlled by other apps; their clips still show up in the gallery.
+            </p>
+          </details>
+          <details>
+            <summary>OBS says remote control is off.</summary>
+            <p>
+              Overclip talks to OBS through its built-in WebSocket server. Close OBS and press <em>Turn on remote control</em> in
+              Settings → Recording, or in OBS go to Tools → WebSocket Server Settings and tick <em>Enable WebSocket server</em>.
+              Overclip reads the port and password from OBS's own settings, so there's nothing to copy.
+            </p>
+          </details>
+          <details>
+            <summary>Is it really free?</summary>
+            <p>Yes: free, no ads, no account, and the full source is on GitHub under the MIT license.</p>
+          </details>
+          <details>
+            <summary>Will it get me banned / does it work with anti-cheat?</summary>
+            <p>Overclip never touches game processes or memory. It's a normal always-on-top window, the same approach as the Discord or Steam overlays.</p>
+          </details>
+          <details>
+            <summary>It doesn't show over my game.</summary>
+            <p>Switch the game to <em>borderless</em> or <em>windowed fullscreen</em>. Games in exclusive fullscreen don't let any overlay draw on top.</p>
+          </details>
+          <details>
+            <summary>Ctrl+P no longer prints in other apps.</summary>
+            <p>While Overclip runs it owns its shortcuts everywhere. Pick a different side-panel combo in Settings → Shortcuts (for example <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>).</p>
+          </details>
+          <details>
+            <summary>Does it send my clips anywhere?</summary>
+            <p>Never. Overclip works fully offline; nothing leaves your PC unless you paste it somewhere yourself.</p>
+          </details>
+          <details>
+            <summary>How do I uninstall it?</summary>
+            <p>Windows Settings → Apps → Installed apps → Overclip → Uninstall. Your clips are never touched.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="wrap">
+          <div class="cta-logo">
+            <span class="cta-ring" aria-hidden="true"></span>
+            <img src="assets/logo.png" alt="" width="64" height="64" />
+          </div>
+          <h2>Find that clip in two seconds.</h2>
+          <a class="btn btn-primary" data-download href="https://github.com/Jxkss/overclip/releases/latest">
+            <span data-download-label>Download for Windows</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div>
+          <strong>Overclip</strong> · MIT licensed · made by
+          <a href="https://github.com/Jxkss">Jxkss</a>
+        </div>
+        <nav aria-label="Footer">
+          <a href="https://github.com/Jxkss/overclip">Source</a>
+          <a href="https://github.com/Jxkss/overclip/releases">Releases</a>
+          <a href="https://github.com/Jxkss/overclip/issues/new/choose">Report a bug</a>
+          <a href="https://github.com/Jxkss/overclip/blob/main/CONTRIBUTING.md">Contribute</a>
+        </nav>
+        <p class="disclaimer">
+          Overclip is an independent project, not affiliated with NVIDIA, AMD, Microsoft or any game or recording-software
+          vendor. Product names are used only to describe compatibility.
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js?v=12" defer></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Overclip</title>
+  <!-- "O" and "C" monogram: a white ring with a green C over it. The thin dark outline
+       around the C keeps the letters apart, so the mark is meant for dark backgrounds. -->
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="#141414" />
+  <rect x="1.5" y="1.5" width="61" height="61" rx="13.5" fill="none" stroke="#2a2a2a" stroke-width="1" />
+  <g transform="translate(32 32) scale(0.8) translate(-32 -32)">
+    <circle cx="25" cy="32" r="14" fill="none" stroke="#ffffff" stroke-width="8" />
+    <path d="M48.9 22.1 A14 14 0 1 0 48.9 41.9" fill="none" stroke="#141414" stroke-width="11" stroke-linecap="round" />
+    <path d="M48.9 22.1 A14 14 0 1 0 48.9 41.9" fill="none" stroke="#76b900" stroke-width="8" stroke-linecap="round" />
+  </g>
+</svg>

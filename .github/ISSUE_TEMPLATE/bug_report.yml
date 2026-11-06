@@ -1,0 +1,55 @@
+name: Bug report
+description: Something isn't working right
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report this!
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Overclip version
+      description: Settings → About
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+  - type: dropdown
+    id: recorder
+    attributes:
+      label: Which recorder do you use?
+      multiple: true
+      options:
+        - Xbox Game Bar
+        - NVIDIA ShadowPlay / NVIDIA App
+        - AMD ReLive / Adrenalin
+        - OBS
+        - Medal
+        - Outplayed
+        - ShareX
+        - Other
+  - type: dropdown
+    id: display
+    attributes:
+      label: Game display mode (if it's about the overlay in a game)
+      options:
+        - Borderless / windowed fullscreen
+        - Exclusive fullscreen
+        - Windowed
+        - Not game related
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots, steps to reproduce, how many clips you have…

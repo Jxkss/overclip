@@ -1,0 +1,11 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+
+# local tooling
+.claude/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
